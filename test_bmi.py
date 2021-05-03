@@ -2,15 +2,25 @@
 
 
 import unittest
-import sys
-sys.path.append('/home/alan/<moduleDirectoryPath>')    #if testing using Travers CI, will be different
-import <Module>
+#import sys
 
-class TestCalc(unittest.TestCase):
+import bmi
+
+
+class Testbmi(unittest.TestCase):
 #put tests in here
 
-	def test_add(self):
-        	self.assertEqual(calc.add(10, 5), 15)
+	def test_ounces2pounds(self):
+        	self.assertEqual(bmi.ounces2pounds(0), 0)
+			self.assertEqual(bmi.ounces2pounds(1), 16)
+	
+	def test_stones2pounds(self):
+        self.assertEqual(bmi.stones2pounds(0),0)
+		self.assertEqual(bmi.stones2pounds(1),14)
+
+	def test_weight2kg(self):
+        self.assertEqual(bmi.weight2kg(0,0,0),0)
+		#self.assertEqual(bmi.weight2kg(1,1,1),0)
 
 
 
@@ -21,13 +31,11 @@ if __name__ =='__main__':
     
     
     
-    
-    
 #to run in terminal
 
-python3 ~/<TestfileDirectoryPath>/<testFile>.py
+#python3 ~/<TestfileDirectoryPath>/<testFile>.py
 
 
 
 #assertion Methods
-https://docs.python.org/3.3/library/unittest.html#assert-methods
+#https://docs.python.org/3.3/library/unittest.html#assert-methods
