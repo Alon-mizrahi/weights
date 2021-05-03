@@ -11,11 +11,11 @@ def weight2kg(stones,pounds,ounces):
     return (stones2pounds(stones)+pounds+ounces2pounds(ounces))/2.2
 
 def height2metres(feet,inches):
-    return feet/3.82
+    return feet/3.82   #what about inches?
 
 
 def categorise(kg,metre):
-    bmi=kg*kg/metre
+    bmi=kg*kg/metre #calculation is wrong
     if bmi<19:
         cat='A'
     elif bmi<=26:
