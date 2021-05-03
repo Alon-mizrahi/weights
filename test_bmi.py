@@ -1,6 +1,5 @@
 
 
-
 import unittest
 import sys
 import bmi
@@ -9,11 +8,11 @@ import bmi
 class Testbmi(unittest.TestCase):
 	#put tests in here
 	def test_Ounces2pounds(self):
-    	self.assertEqual(bmi.ounces2pounds(0),0)
+	    self.assertEqual(bmi.ounces2pounds(0),0)
 		self.assertEqual(bmi.ounces2pounds(1),16)
 	
 	def test_Stones2pounds(self):
-        self.assertEqual(bmi.stones2pounds(0),0)
+		self.assertEqual(bmi.stones2pounds(0),0)
 		self.assertEqual(bmi.stones2pounds(1),14)
 
 	def test_Weight2kg(self):
